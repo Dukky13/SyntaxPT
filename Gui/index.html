@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="SXPT_imagem.ico" type="image/x-icon">
+    <title>SyntaxPT</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #232931;
+            color: #333;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            color: #2ac994;
+        }
+
+        textarea {
+            width: 100%;
+            max-width: 800px;
+            height: 200px;
+            padding: 15px;
+            font-size: 1rem;
+            border: 1px solid #393E46;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: border-color 2s ease;
+            background-color: #393E46;
+            color: #ffffff;
+            
+        }
+
+        textarea:focus {
+            border-color: #ffffff;
+            outline: none;
+        }
+
+        textarea::placeholder {
+            color: white;
+        }
+
+        button {
+            background-color: #4ECCA3;
+            color: #ffffff;
+            border: none;
+            padding: 12px 20px;
+            font-size: 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #18bb85;
+            transform: translateY(-4px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        button:active {
+            transform: translateY(0);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            margin-top: 30px;
+            font-size: 1.75rem;
+            color: #2ac994;
+        }
+
+        pre {
+            background-color: #393E46;
+            padding: 20px;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 800px;
+            font-size: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            color: #ffffff;
+        }
+
+        @media (max-width: 768px) {
+            textarea {
+                height: 150px;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.9rem;
+            color: #e7e5e5;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>SyntaxPT.sxpt</h1>
+    <textarea id="codigo" placeholder="Escreva o código em SyntaxPT aqui..."></textarea>
+    <button onclick="interpretar()">Run code</button>
+    <h2>Terminal:</h2>
+    <pre id="saida"></pre>
+    <br>
+    <a href='introEscuroSXpt.html'><button>Introdução ao SyntaxPT</button></a>
+    <br>
+    <br>
+    <a href='SyntaxPT.html'><button>Modo claro☀️</button></a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br> 
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <p>&copy; 2024 SyntaxPT. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="interprete.js"></script>
+
+</body>
+</html>
